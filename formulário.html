@@ -1,0 +1,88 @@
+<!doctype html> <html>
+    <head> <meta charset = "utf-8"> <!--Posso digitar acentos agudos e outros ao meu código-->
+        <typle>
+            Página web
+        </typle>  <!--Título do meu cabeçalho-->
+    </head>
+    <body> <!--Corpo da minha página web-->
+
+       
+
+        <!--Vou começae a criar o formulário, logo a baixo.-->
+        <form action = "/pagina-processa-dados-do-form" method=""post>
+            <!--form action :Tag para criar o formulario -->
+            <!--Method : medodo, em que o usuário vai enviar os dados, ou seja define a entrada e 
+            saída de dados. Define o método http (post, ou get para envio dos dados). -->
+            <fieldset> <!--Cria seções dentro do formulário, ajudando a separar os campos no código e a visualizar a 
+                página no compuatador-->
+                <legend><strong><i>Dados gerais</i></strong> </legend> <!--Aqui vou escrever o meu conjunto de campo, ou seja
+                dados gerais-->
+                <label for = "nome">nome:</label> <!--<label> : define um rótulo, ou descrição para o nosso formulario
+                    -->
+                <input type="text" minlength = "7" id="nome" /> <!--input type : definindo o tipo de dado que é
+                caracter e minlength : define a quantidade de caractéries, que eu posso digitar-->
+                <label for = "dt_nascimento">Data_nascimento:</label>
+                <input type="text"id="dt_nascimento">
+                <label for = "cpf">cpf:</label>
+                <input type="text" minlength = "11" id="cpf">
+
+                <!--Aqui neste <fieldset>, ou seja nesse campo do nosso formulário, já definimos
+                    uma parte dele que é o nome, data de nascimento, cpf do usuário-->
+
+            </fieldset>
+
+            <fieldset> <!--Segundo campo -->
+                <legend><strong><i>Endereço</i></strong></legend> <!--Segundo conjunto-->
+                <label for ="endereço">endereço:</label>
+                <select id = "endereço">
+                    <!--opçoes para o botão selecione : rua, estrada, rodovia-->
+                    <option value = " ">Selecione</option>
+                    <option value = " ">Rua</option>
+                    <option value = " ">Estrada</option>
+                    <option value = " ">Rodoviaria</option>
+                    <option value = " ">outros...</option>
+                </select>
+                <label for ="Id_logradouro">Logradouro:</label>
+                <input type = "text" id="id_logradouro">
+                <label for = "id_telefone">telefone:</label>
+                <input type = "text" minlength="8" id="id_telefone">
+                <label for = "id_ddd">ddd:</label>
+                <select id = "id_ddd">
+                    <option value = " ">51</option>
+                    <option value = " ">53</option>
+                    <option value = " ">55</option>
+                    <option value = " ">49</option>
+                    <option value = " ">48</option>
+                    <option value = " ">47</option>
+                    <option value = " ">45</option>
+                    <option value = " ">44</option>
+                    <!--Opçoes para o botão ddd -->
+                </select>
+                <label for = "id_whatsapp">Contato:</label>
+                <input type = "text" minlength="8" id="id_whatsapp"> 
+
+            </fieldset> <!--Fechando o segundo campo-->
+
+            <fieldset> <!--Nosso terceiro campo-->
+                <legend><strong><i>Fale conosco</i></strong></legend> <!--Terceiro conjunto-->
+                <label for = "msg">Menssagem:</label>
+                <textarea type = "text" id ="msg"></textarea>
+                <!--<textearea : serve para ampliar o espaço para o usuário digitar, ou seja vai 
+                ampliar o espaço da menssagem--> 
+            </fieldset> <!--Fechando o 3 campo do nosso formulario-->
+
+            <fieldset> <!--Nosso ultimo campo do formulario-->
+                <button type = "submit">Envie uma menssagem</button>
+                <!--Criando um botão e colocando o tipo submit : tipo de botão, em que vamos 
+                poder escrever uma menssagem -->
+                <button type = "reset">Limpar formulario</button>
+                <!--Criando um botão e colocando o tipo reset, ou seja, aqui podemos resetar o 
+                formulário-->
+
+            </fieldset>
+
+
+        </form>
+
+    </body>
+</html>
