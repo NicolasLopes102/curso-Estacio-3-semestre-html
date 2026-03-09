@@ -1,0 +1,62 @@
+<!DOCTYPE HTML> <HTML>
+    <HEAD> <META CHARSET = "UTF-8"> <!--código para eu conseguir colocar
+        acentos-->
+        <TYPLE>Página web</TYPLE>
+    </HEAD>
+    <BODY>
+        <FORM ACTION=" /página-processa-dados-do-form"
+        method="post"> 
+        <!--Form actiom => Aqui estou criando um formulário para a minha 
+        página web. Method post => O metodo, em que o usuário vai enviar
+        os dados -->
+        <fieldset> <!--Criando o conjunto de campos do nosso formulário
+            -->
+            <legend><i><strong>formulário</strong></i></legend>
+            <!--Legend => aqui vou escrever uma legenda para o nosso
+            formulário-->
+            <label for = "name">nome:</label>
+            <!--Label : define um rótulo, ou descrição para um elemento
+            do formulário-->
+            <input type = "text"minlength=10 id ="name" required>
+            <!--Input type : Definindo o tipo de dado para um nome : bem
+            similar a um nome significativo em C.
+            minlength : Aqui estamos definindo a quantidade de vezes
+            que o usuário vai poder digitar.
+            required : Este atributo obriga o usuário a preencher o
+            campo nome-->
+            <br>
+            <!--Esta tag é bem similar a tella enter, ou seja aqui vamos
+            dar um espaço-->
+            <label for = "email" email:></label>
+            <!--Definindo o rótulo, ou descrição para o nosso formulário-->
+            <input type-="email" id = "email" required>
+            <!--Definimos o campo email-->
+            <br> <!--Espaço-->
+            <label for="tel"telefone></label>
+            <!--Rótulo, ou descril~çao telefone-->
+            <input type="tel" id="telefone"required>
+            <!--Definindo o rótulo, ou descrição para o nosoo formulário-->
+            <br> <!--Espaço-->
+            <label for = "dt" data_nascimento:></label>
+            <!--Definindo o rótulo, ou descrição para o nosso formulário-->
+            <input type="date" id="dt"required>
+            <!--Definimos o tipo de dado para a data de nascimento-->
+        </fieldset>
+        <fieldset><!--Segundo campo e o final da nossa página-->
+            <legend><i><strong>Menssagem</strong></i></legend> 
+            <!--Colocando a legenda : menssagem-->
+            <label for="menssagem">opcional:</label>
+            <!--Definindo o rótulo, ou descrição para o nosso formulário-->
+            <textarea id="opcional"
+            cols="30" rows="4">
+        </textarea>
+        <!--Definindo espaçamento para o usuário-->
+        <input type="Submit"
+        value="Enviar">
+        <input type="reset"
+        value="apagar">
+        <!--Criando os botões para enviar menssagem e o outro para apagar-->
+        </fieldset>
+    </FORM>
+    </BODY>
+</HTML>
